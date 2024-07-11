@@ -1,0 +1,99 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+    </header>
+	<!--
+		<button onclick="topFunction()" id="goTopBtn" title="Go to top"></button>
+	-->
+	<button id="goTopBtn" title="Go to top"></button>
+
+    <!-- Each Section has an ID (used for the anchor) and a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav. -->
+    <section id="section1" data-nav="Section 1">
+      <div class="landing__container">
+        <button type="button" class="container__collapsible"><h2>Section 1 - Groups / Game 1</h2></button>
+		<div class="container__content">
+			<p><em>Portugal 2-1 Czechia (June 18, 2024)</em></p>
+
+			<p>Portugal secured a win in their opening match against Czechia. An own goal and a goal from Francisco Conceição gave them a 2-1 victory, with the Czech team scoring one in reply.</p>
+		</div>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <button type="button" class="container__collapsible"><h2>Section 2 - Group / Game 2</h2></button>
+		<div class="container__content">
+			<p><em>Portugal 3-0 Turkey (June 22, 2024)</em></p>
+
+			<p>Portugal continued their strong performance with a dominant 3-0 win over Turkey. Goals from Bernardo Silva, an own goal, and Bruno Fernandes ensured a comfortable victory</p>
+		  </div>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <button type="button" class="container__collapsible"><h2>Section 3 - Group / Game 3</h2></button>
+		<div class="container__content">
+			<p><em>Portugal 0-2 Georgia (June 26, 2024)</em></p>
+
+			<p>In a surprising turn of events, Portugal was defeated 2-0 by Georgia. This result ended Portugal's group stage on a less positive note, but they still advanced to the knockout rounds due to their earlier successes</p>
+		  </div>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <button type="button" class="container__collapsible"><h2>Section 4 - Round of 16</h2></button>
+		<div class="container__content">
+			<p><em>Portugal - Slovenia (July 1, 2024)</em></p>
+
+			<p>In the Euro 2024 Round of 16 match between Portugal and Slovenia on July 1, 2024, Portugal advanced to the quarter-finals after a tense penalty shootout, winning 3-0 on penalties following a 0-0 draw in regular and extra time.</p>
+
+			<p>The match was characterized by Portugal's dominance in possession and chances, but they were unable to break through Slovenia's resolute defense. Cristiano Ronaldo, eager to score his first goal of the tournament, had a particularly eventful night. He missed several opportunities during regular play and had a penalty saved by Slovenian goalkeeper Jan Oblak in extra time, leading to an emotional reaction from the Portuguese star.</p>
+
+			<p>Slovenia came close to scoring a few times, most notably when Benjamin Sesko forced a crucial save from Portugal's goalkeeper Diogo Costa. The game remained goalless, leading to a penalty shootout. In the shootout, Ronaldo redeemed himself by scoring Portugal's first penalty. Diogo Costa was the hero for Portugal, saving three consecutive penalties from Slovenia's Josip Ilicic, Jure Balkovec, and Benjamin Verbic. Bernardo Silva sealed the victory for Portugal with the winning penalty.</p>
+			<p>This victory set up a quarter-final clash for Portugal against France.</p>
+		  </div>
+      </div>
+    </section>
+    <section id="section5" data-nav="Section 5">
+      <div class="landing__container">
+        <button type="button" class="container__collapsible"><h2>Section 5 - Round of 8</h2></button>
+		<div class="container__content">
+			<p><em>Portugal - France (July 5, 2024)</em></p>
+
+			<p>In the Euro 2024 quarter-final match between Portugal and France, held on July 5, 2024, the game ended in a dramatic penalty shootout after a goalless draw through regular and extra time. France emerged victorious, winning 5-3 on penalties.</p>
+			
+			<p>Throughout the match, both teams had several opportunities to score but were denied by strong defensive performances and excellent goalkeeping. Portugal's Bruno Fernandes had a significant chance in the 60th minute, but his shot was saved by French goalkeeper Mike Maignan. Cristiano Ronaldo and Vitinha also came close but couldn't convert their chances. France had notable attempts as well, including a close-range shot from Eduardo Camavinga that went wide and a last-minute save from Diogo Costa against Kylian Mbappe. Extra time saw Ronaldo miss another critical chance, and France's Dayot Upamecano made a crucial block against Rafael Leao.</p>
+			
+			<p>In the penalty shootout, France was flawless, scoring all five of their penalties. Portugal, however, faltered when Joao Felix's shot hit the post. Cristiano Ronaldo, Bernardo Silva, and Nuno Mendes scored their penalties for Portugal, but it wasn't enough to overcome France's perfect record in the shootout. This victory propelled France into the semi-finals, where they will face Spain.</p>
+		  </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+	
+</html>
